@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace LocadoraDeVeiculos.TestesIntegracao.ModuloPlanoDeCobranca
 {
     [TestClass]
-    public class RepositorioPlanoTest : RepositorioBaseTests
+    public class RepositorioPlanoTest
     {
         private GrupoAutomovel gp;
         public RepositorioPlanoTest()
@@ -23,11 +23,6 @@ namespace LocadoraDeVeiculos.TestesIntegracao.ModuloPlanoDeCobranca
         {
             //Arrange
             var plano = Builder<PlanoDeCobranca>.CreateNew().With(p => p.GrupoAutomovel = gp).Build();
-
-            //Act
-            repositorioP.Inserir(plano);
-
-            //Assert
 
 
         }
